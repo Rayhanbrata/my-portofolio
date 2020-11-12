@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<nav id="navbar">
+  <header>C Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#contoh_program"
+        >Contoh Program</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#variables">Variabels</a>
+    </li>
+    <li><a class="nav-link" href="#data_type">Data Type</a></li>
+    <li><a class="nav-link" href="#input">input</a></li>
+    <li>
+      <a class="nav-link" href="#if_else">If Else Statement</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li><a class="nav-link" href="#reference">References</a></li>
+  </ul>
+</nav>
+				
+				<main id="main-doc"  >
+				 <section class="main-section" id="Introduction">
+				 	<header>Introduction</header>
+				 		<article><p>
+		
+Bahasa Pemrograman C adalah sebuah bahasa pemrograman komputer yang bisa digunakan untuk membuat berbagai aplikasi (general-purpose programming language), mulai dari sistem operasi (seperti Windows atau Linux), antivirus, software pengolah gambar (image processing), hingga compiler untuk bahasa pemrograman, dimana C banyak digunakan untuk membuat bahasa pemrograman lain yang salah satunya adalah PHP.
+
+Meskipun termasuk general-purpose programming language, yakni bahasa pemrograman yang bisa membuat berbagai aplikasi, bahasa pemrograman C paling cocok merancang aplikasi yang berhubungan langsung dengan Sistem Operasi dan hardware. Ini tidak terlepas dari tujuan awal bahasa C dikembangkan.
+				 			</p></article></section>
+
+				 		<section class="main-section" id="contoh_program">
+				 			<header><b>Contoh Program</b></header>
+				 			<article><p>
+				 				Berikut Contoh Program dalam Bahasa C
+				 				<code>#include <stdio.h>
+int main() {
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}</code>
+
+
+				 			</p></article>
+
+				 		</section>	
+				 			<section class="main-section" id="variables">
+					 			<header><b>Variable</b></header>	
+					 			<article>
+					 				<p>
+					 					Variabel adalah ‘penanda’ identitas yang digunakan untuk menampung suatu nilai. Nilai tersebut dapat diubah sepanjang kode program. Secara teknis, variabel merujuk kepada suatu alamat di memory komputer. Setiap variabel memiliki nama yang sebagai identitas untuk variabel tersebut.
+					 				</p>
+
+
+					 				<p>
+					 				Penamaan variabel merujuk ke aturan identifier yang pernah kita bahas beberapa tutorial sebelumnya. Berikut aturan penamaan variabel di dalam bahasa pemrograman C
+					 			</p>
+					 			<p>
+					 				Variabel bisa terdiri dari huruf, angka dan karakter underscore / garis bawah ( _ ).
+
+					 			</p>
+					 			<p>
+					 				Karakter pertama dari variabel hanya boleh berupa huruf dan underscore ( _ ), tidak bisa berupa angka. Meskipun dibolehkan, sebaiknya tidak menggunakan karakter underscore sebagai awal dari variabel karena bisa bentrok dengan beberapa variabel settingan program.
+					 			</p>
+					 			<p>
+					 				Variabel harus selain dari keyword. Sebagai contoh, kita tidak bisa memakai kata int sebagai nama variabel, karena int merupakan keyword untuk menandakan tipe data integer.
+					 			</p>
+
+					 			</article>
+</section>
+
+							<section class="main-section" id="data_type">
+								<header>Data Type</header>	
+								<article>
+									<p>
+										Menurut Wikipedia:
+tipe saja adalah sebuah pengelompokan data untuk memberitahu compiler atau interpreter bagaimana programmer ingin mengolah data tersebut” 1
+
+Ada delapan jenis tipe data pada C:<ol>
+	<li>Char</li>
+	<li>Integer</li>
+	<li>Float</li>
+	<li>Array</li>
+	<li>Struct</li>
+	<li>Pointer</li>
+	<li>Enum</li>
+	<li>Void</li>
+
+
+
+
+</ol>
+									</p>
+								</article>
+							</section>
+
+							<section class="main-section" id="input">
+								<header>Input</header>
+								<article>
+									<p>Contoh code input di dalam Bahasa C <code>#include <stdio.h>
+
+void main(){
+int angka;
+scanf("%d", &angka); 
+fflush(stdin);  //fflush digunakan untuk membersihkan buffer. 
+}</code></p>
+								</article>
+
+							</section>
+
+
+
+
+
+
+
+
+
+							<section class="main-section" id="if_else"> 
+								<header>If else Statement</header>
+								<article><p>
+									Pada dasarnya, kondisi IF ELSE IF adalah sebuah struktur logika program yang di dapat dengan cara menyambung beberapa kondisi IF ELSE menjadi sebuah kesatuan.
+								</p>
+								<p>Jika kondisi pertama tidak terpenuhi atau bernilai false, maka kode program akan lanjut ke kondisi IF di bawahnya. Jika ternyata tidak juga terpenuhi, akan lanjut lagi ke kondisi IF di bawahnya, dst hingga blok ELSE terakhir atau terdapat kondisi IF yang bernilai true.</p>
+								<p>
+									Berikut format dasar penulisan kondisi IF ELSE IF dalam bahasa C:
+	</p>
+	<code>
+		if (condition_1) {
+  // Kode program yang dijalankan jika condition_1 berisi nilai True
+}
+else if (condition_2) {
+  // Kode program yang dijalankan jika condition_2 berisi nilai True
+}
+else if (condition_3) { 
+  // Kode program yang dijalankan jika condition_3 berisi nilai True 
+}
+else  { 
+  // Kode program yang dijalankan jika semua kondisi tidak terpenuhi
+}
+	</code>
+
+
+							</article>
+
+
+
+							</section>
+				<section class="main-section" id="while_statement">
+					<header>While Statement</header>
+					<article>
+						<p>Perulangan DO WHILE merupakan modifikasi dari perulangan WHILE, yakni dengan memindahkan posisi pemeriksaan kondisi ke akhir perulangan. Artinya, kita akan lakukan dulu sebuah perulangan, baru di akhir diperiksa apakah kondisi variabel counter sudah terpenuhi atau belum.</p>
+						<code>start;
+do
+{
+ // kode program
+ // kode program
+ increment;
+} 
+while (condition)</code>
+					</article>
+
+
+
+	
+				</section>
+
+
+<section class="main-section" id="reference">
+	
+<header>References</header>
+<article>
+	<ul>
+		<li>
+			Semua Sumber yang ditulis di web ini adalah berasal dari
+			<a href="https://www.petanikode.com/c-untuk-pemula/" target="_blank">C</a>
+		</li>
+
+	</ul>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</article>
+
+
+
+
+</section>
+</main>
+
+
+
+</html>
+
+
+
+
+				 
+
+
+
+						
